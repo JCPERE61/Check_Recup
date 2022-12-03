@@ -39,6 +39,14 @@ Puedes definir un default-parameter para ayudarte.
 
 function seleccionarPelicula(peliculas, nombrePelicula, i = 0) {
    // Tu código aquí:
+   if (!peliculas.hasOwnProperty('0')) return 'por favor indicar las peliculas a buscar';
+   while (peliculas.hasOwnProperty (i.toString())){
+      if (peliculas[i.toString()] === nombrePelicula){
+         return 'se encontro la pelicula: ' + nombrePelicula;
+      } else
+      {i=i+1;}
+   }
+   return 'no tenemos la pelicula: ' + nombrePelicula;
 }
 
 /*⚠️ NO MODIFICAR NADA DEBAJO DE ESTA LINEA ⚠️*/
