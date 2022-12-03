@@ -33,6 +33,15 @@ OUTPUT ---> { "estrenar": 'Morbius', 1: 'La invitación', 2: 'Halloween: el fina
 
 function guardarPeliculas(pelisQueue) {
    // Tu código aquí:
+
+   let obj = {};
+   let tamano = pelisQueue.size();
+   let pelicula = pelisQueue.dequeue();
+   obj['estrenar']= pelicula;
+   for (let i=1; i< tamano;i++){
+      obj[i]=pelisQueue.dequeue();
+   }
+   return obj;
 }
 
 /*⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️*/
