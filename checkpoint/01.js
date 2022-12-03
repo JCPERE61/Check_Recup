@@ -25,6 +25,12 @@ INPUT ---> Queue ['Morbius', 'La invitación', 'Halloween: el final', 'Muerte en
 OUTPUT ---> { "estrenar": 'Morbius', 1: 'La invitación', 2: 'Halloween: el final', 3:'Black Adam' }
 */
 
+// 1.- Qué nos llega? Una Queue con muchas películas
+// 2.- Qué se debe hacer? Implementar una función que guarde las películas como contenedor con números ascendientes exceptuando
+//      la primera propiedad que debe tener nombre de "estrenar". A medida que se guardan las películas se debe ir quitando
+//      de la Queue. Se debe respetar el orden de FIFO. 
+// 3.- Cómo proceder?
+
 function guardarPeliculas(pelisQueue) {
    // Tu código aquí:
 }

@@ -31,6 +31,13 @@ const { BinarySearchTree } = require("../DS");
 //
 //  TIP: Podés usar default parameters para ayudarte.
 
+// 1.- Qué nos llega? Una entrada a una película en forma de string y un array vacio.
+// 2.- Qué se debe hacer? Buscar entre las películas la que coincida con la entrada y agregar al prototype del BinarySearchTree
+//     el método "obtenerPelicula()", el cuál recibirá por parámetros un objeto, que tiene nombre, horario y otro objeto
+//     que se llama cartelera y contiene dia y mes de las peliculas que se necesitan encontrar para que puedas verla.
+//     Devolver un array las películas que coincidan con la solicitada.
+// 3.- Cómo proceder? Recorrer el arbol en que se encuentran objetos
+
 BinarySearchTree.prototype.obtenerPelicula = function (string, array = []) {
   // Tu código aquí:
 };

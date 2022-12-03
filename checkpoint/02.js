@@ -41,6 +41,12 @@ OUTPUT ---> Stack [
         duracion: "1:45 hs",
       }]
 */
+
+// 1.- Qué nos llega? Un arreglo de películas y un string con el nombre de la película
+// 2.- Qué se debe hacer? Crear un Stack para guardar las películas del arreglo. Guardar sólamente las películas que no coincidan
+//     con el string recibido. Si tiene duración menor a una hora, tampoco incluir en el Stack. Retornar el Stack
+// 3.- Cómo proceder?
+
 function acomodarPeliculas(listaDePeliculas, nombre) {
    // Tu código aquí:
 }

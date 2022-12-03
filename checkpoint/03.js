@@ -48,6 +48,16 @@ INPUT ---> ["Los Simpsons", "Los increíbles"]
 OUTPUT --> "No se encontro ninguna de esas peliculas en nuestro catalogo"
 */
 
+// 1.- Qué nos llega? Arreglo de Objetos con las películas  
+// 2.- Qué se debe hacer? Buscar en el catálogo, las películas que están de estreno y actualizarlas y retornar otra función
+//     que recibe un arreglo de strings (nombre de películas que están de estreno) y retornar 
+//     a) El string "Por favor indicar las peliculas que son de estreno" si la función hija no recibe una película de estreno.
+//     b) El string "No se encontro ninguna de esas peliculas en nuestro catalogo" si ninguno de los nombres coincide con 
+//        las películas de la lista.
+//     c) El arreglo de películas, pero con la propiedad "estreno" actualizada en true si esa película es de estreno
+//     Sólamente se debe cambiar la propiedad "estreno" de las películas de estreno.
+// 3.- Cómo proceder?
+
 function pelisEstrenos(listaDePeliculas) {
    //Tu código aquí:
 }

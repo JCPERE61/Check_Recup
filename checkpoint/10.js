@@ -34,6 +34,15 @@ OUTPUT -->
                          /                                       \
 {nombre: "300", horario: 6, ticket: true}            {nombre: "Harry potter", horario: 23, ticket: true}
 */
+
+// 1.- Qué nos llega? Un arreglo con elementos únicos
+// 2.- Qué se debe hacer? Agregar al prototype BinarySearchTree el método "ingresar" que recibirá por parámetro un
+//     arreglo de objetos en los que se encuentran los horarios y nombres de las películas. Recorrer el arbol y agregar la
+//     propiedad "ticket" con el valor true en cada uno de los nodos que coincida con los elementos del arreglo que 
+//     recibes por parámetro para identificar qué tickets tienen dueño y cuántos quedan disponibles. Si el arreglo recibido
+//     está vacío devolver false.
+// 3.- Cómo proceder?
+
 BinarySearchTree.prototype.ingresar = function (arregloDePeliculas) {
    // Tu código aquí:
 

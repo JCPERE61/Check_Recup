@@ -64,6 +64,12 @@ OUTPUT --->
 1) Te sugerimos que investiges métodos de objetos. Tal vez el "assign" te podría servir...
 
 */
+
+// 1.- Qué nos llega? Dos listas desordenadas de películas una del catálogo y otra con las películas por ingresar.
+// 2.- Qué se debe hacer? Ordenar las películas de las dos listas de acuerdo a la propieda "AÑO" de MENOR a MAYOR. 
+// 3.- Cómo proceder?
+
+
 const ordenarPorAño = (catalogo, nuevasPeliculas) => {
    // Tu código aquí:
 };

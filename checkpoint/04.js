@@ -30,6 +30,13 @@ OUTPUT --> 'se encontro la pelicula: Terminator'
 Puedes definir un default-parameter para ayudarte.
 */
 
+// 1.- Qué nos llega? Un objeto con los nombres de varias películas y las películas que quieren ver.
+// 2.- Qué se debe hacer? Utilizando recursión  para retornar: 
+//     a) Si no se pasa ninguna película: 'por favor indicar las peliculas a buscar'
+//     b) Si no se encuentra la pelicula retornar el string: 'no tenemos la pelicula: "nombrePelicula"'.
+//     c) Si se encuentra la película: 'se encontro la pelicula: "nombrePelicula"'.
+// 3.- Cómo proceder?
+
 function seleccionarPelicula(peliculas, nombrePelicula, i = 0) {
    // Tu código aquí:
 }

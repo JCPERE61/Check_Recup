@@ -20,6 +20,13 @@ INPUT ---> 3
 OUTPUT --> Head ➡ (3) ➡ (3)
 */
 
+// 1.- Qué nos llega? Una lista con las películas disponibles por el momento y un número de estantería.
+// 2.- Qué se debe hacer? Ordenarlas de manera mas intiuitiva, agragando un nuevo método llamado "encontrarPeliculas" del 
+//     prototype de LinkedList que retorne una nueva lista en que se incluyan todas las películas que tengan el mismo 
+//     número de estantería que se recibe por parámetro. Debe retornarse una nueva LinkedList que coincidan con el número
+//     de parámetro. Si no se encuentran elementos con el mismo número devolver "false".
+// 3.- Cómo proceder?
+
 LinkedList.prototype.encontrarPeliculas = function (numeroDeEstantería) {
    // Tu código aquí:
 };
