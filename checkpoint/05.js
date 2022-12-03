@@ -45,14 +45,21 @@ OUTPUT --->
 1) Podes definir un default-parameter para ayudarte.
 */
 
-// 1.- Qué nos llega? Un arreglo de objetos con cada objeto una película con la propiedades "nombre", "añoDe Estreno", "genero",
+// 1.- Qué nos llega? Un arreglo de objetos con cada objeto una película con la propiedades "nombre", "añoDeEstreno", "genero",
 //     "taquillera". Todos los valores son strings a excepción del último que es booleano.
 // 2.- Qué se debe hacer? Buscar las películas taquilleras (que dan mas ganacias) recorriendo el arreglo de manera recursiva y devolver 
-//     las películas que tengan la propidad "taquillera" sea igual a true. Si el arreglo está vacío retornar un arreglo vacio.
+//     las películas que tengan la propiedad "taquillera" sea igual a true. Si el arreglo está vacío retornar un arreglo vacio.
 // 3.- Cómo proceder?
 
 function peliTaquillera(peliculas, aux = []) {
-   // Tu código aquí:
+   // Tu código aquí
+   while(peliculas.length > 0) {
+   let anadido = peliculas.shift();
+   if(anadido.taquillera) {
+    aux.push(anadido);
+  } 
+  }
+  return aux;
 }
 
 /*⚠️ NO MODIFICAR NADA DEBAJO DE ESTA LINEA ⚠️*/
