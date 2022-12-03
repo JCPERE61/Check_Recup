@@ -29,6 +29,16 @@ OUTPUT --> Head ➡ (3) ➡ (3)
 
 LinkedList.prototype.encontrarPeliculas = function (numeroDeEstantería) {
    // Tu código aquí:
+   peliculas = new LinkedList();
+   
+   while (LinkedList.next !== null){
+      let film = LinkedList.remove();
+      let estanteria = LinkedList.remove();
+      if (estanteria = numeroDeEstantería){
+         peliculas.add (film);
+      }
+    }
+    return peliculas
 };
 
 /*⚠️ NO MODIFICAR NADA DEBAJO DE ESTA LINEA ⚠️*/

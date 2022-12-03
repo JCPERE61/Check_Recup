@@ -20,13 +20,19 @@ OUTPUT --> Head ➡ (1) ➡ (2) ➡ (3) ➡ (4)
 
 // 1.- Qué nos llega? Longitud de la lista a crear. 
 // 2.- Qué se debe hacer? Crear el método "generarLista" del prototype LinkedList que recibe por parámetro
-//     el número de la cantidad de nodos (length) que tiene la lista. Cada número de la lista debe incrementarse en +1ç
+//     el número de la cantidad de nodos (length) que tiene la lista. Cada número de la lista debe incrementarse en +1
 //     respecto al anterior comenzando desde 1. Devolver una lista que contiene la misma longitud que se recibe 
 //     por parámetro
 // 3.- Cómo proceder?
 
 LinkedList.prototype.generarLista = function (longitud) {
    // Tu código aquí:
+   let nuevaLista = new LinkedList();
+   this.head= 1
+   for (let i=1;i<longitud;i++){
+      nuevaLista.add(i+1);
+   }
+   return nuevaLista;
 };
 
 /*⚠️ NO MODIFICAR NADA DEBAJO DE ESTA LINEA ⚠️*/

@@ -66,12 +66,28 @@ OUTPUT --->
 */
 
 // 1.- Qué nos llega? Dos listas desordenadas de películas una del catálogo y otra con las películas por ingresar.
-// 2.- Qué se debe hacer? Ordenar las películas de las dos listas de acuerdo a la propieda "AÑO" de MENOR a MAYOR. 
+// 2.- Qué se debe hacer? Ordenar las películas de las dos listas de acuerdo a la propiedad "AÑO" de MENOR a MAYOR. 
 // 3.- Cómo proceder?
 
 
 const ordenarPorAño = (catalogo, nuevasPeliculas) => {
-   // Tu código aquí:
+   // Tu código aquí
+   
+  let combinado = catalogo.concat(nuevasPeliculas); 
+  let swap = true;
+   while (swap){
+    swap = false;
+    for (let i=0; i<combinado.length-1;i++){
+      if (combinado[i]['añoDeEstreno'] > combinado[i+1]['añoDeEstreno']){
+        let aux = combinado[i]['añoDeEstreno'];
+        combinado[i]['añoDeEstreno'] = combinado[i+1]['añoDeEstreno'];
+        combinado[i+1]['añoDeEstreno'] = aux;
+        swap = true;
+      }
+    }
+   }
+   return combinado;
+
 };
 
 /*⚠️ NO MODIFICAR NADA DEBAJO DE ESTA LINEA ⚠️*/

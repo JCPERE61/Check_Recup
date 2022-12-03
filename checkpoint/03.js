@@ -59,8 +59,25 @@ OUTPUT --> "No se encontro ninguna de esas peliculas en nuestro catalogo"
 // 3.- Cómo proceder?
 
 function pelisEstrenos(listaDePeliculas) {
-   //Tu código aquí:
-}
+  //Tu código aquí:
+  let pelestrenos = [];
+  let resultado = function (peliestreno){
+    for (i=0;i<listaDePeliculas.length;i++){
+      for (j=0;j<peliestreno.length;j++){
+        if (listaDePeliculas[i]['nombre'] === peliestreno[j]){
+          listaDePeliculas[i]['estreno']=true;
+          pelisEstrenos.push(listadoDePeliculas[i]);
+        }
+      }
+      
+    
+
+
+    }
+    
+  }
+  
+  }
 
 /* ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️*/
 module.exports = pelisEstrenos;

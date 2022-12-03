@@ -45,6 +45,23 @@ OUTPUT -->
 
 BinarySearchTree.prototype.ingresar = function (arregloDePeliculas) {
    // Tu código aquí:
+   if (arregloDePeliculas.length === 0) return false;
+   let resultado = [];
+   while (this.left !== null && this.right !== null){
+    for (let i=0; i < arregloDePeliculas.length; i++){
+      if (arregloDePeliculas[i].nombre === this.left.value || arregloDePeliculas[i].nombre === this.right.value){
+        resultado.push(arregloDePeliculas[i]);
+      }
+    }
+    this.right=this.right.right;
+    this.left = this.left.left;    
+
+    }
+    for (let i=0;i<resultado.length;i++){
+      resultado[i].ticket = true;
+    }
+    return resultado;   
+   
 
 };
 

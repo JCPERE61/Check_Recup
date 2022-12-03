@@ -40,6 +40,21 @@ const { BinarySearchTree } = require("../DS");
 
 BinarySearchTree.prototype.obtenerPelicula = function (string, array = []) {
   // Tu código aquí:
+  let funcioncine= [];
+  let obj = [];
+   while (this.left !== null && this.right !== null){
+    if (this.left['nombre'] === string) {
+      fechado = Object.values(this.left.cartelera);      
+    }
+    if (this.right['nombre'] === string) {
+      fechado = Object.values(this.right.cartelera);      
+    }
+    this.left = this.l
+    if (fechado.length >0){
+
+    }
+
+  }
 };
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = BinarySearchTree;
