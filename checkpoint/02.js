@@ -49,6 +49,13 @@ OUTPUT ---> Stack [
 
 function acomodarPeliculas(listaDePeliculas, nombre) {
    // Tu código aquí:
+   let Peliculas = new Stack();
+   for (let i=0; i<listaDePeliculas.length;i++){
+    if (listaDePeliculas[i]['nombre'] !== nombre && listaDePeliculas[i]['duracion'] >= 1){
+      Peliculas.push(listaDePeliculas[i]);
+    }
+   }
+   return Peliculas;
 }
 
 /* ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️*/
