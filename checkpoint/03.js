@@ -60,23 +60,21 @@ OUTPUT --> "No se encontro ninguna de esas peliculas en nuestro catalogo"
 
 function pelisEstrenos(listaDePeliculas) {
   //Tu código aquí:
-  let pelestrenos = [];
-  let resultado = function (peliestreno){
+  if (listaDePeliculas.length === 0) return  "Por favor indicar las peliculas que son de estreno";
+  let estrenados = [];
+  let resultado = function  (peliestreno){
     for (i=0;i<listaDePeliculas.length;i++){
       for (j=0;j<peliestreno.length;j++){
         if (listaDePeliculas[i]['nombre'] === peliestreno[j]){
           listaDePeliculas[i]['estreno']=true;
-          pelisEstrenos.push(listadoDePeliculas[i]);
+          estrenados.push(listadoDePeliculas[i]);
         }
       }
-      
-    
-
-
     }
-    
+    if(estrenados.length === 0) return "No se encontro ninguna de esas peliculas en nuestro catalogo"
+    return estrenados;
   }
-  
+  return resultado(peliestreno);
   }
 
 /* ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️*/
